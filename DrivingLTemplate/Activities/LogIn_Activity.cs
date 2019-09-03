@@ -18,6 +18,7 @@ namespace DrivingLTemplate.Activities
     class LogIn_Activity : AppCompatActivity
     {
         TextView Tview;
+        TextView view;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -35,11 +36,23 @@ namespace DrivingLTemplate.Activities
             {
                 Tview.TransitionName = "imageview1";
                 Intent intent = new Intent(this, typeof(Activities.Register_Activity));
-                intent.PutExtra("ImageId", Resource.Drawable.BlurWay2.ToString());
+                intent.PutExtra("ImageId", Resource.Drawable.BlurWay5.ToString());
                 ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this, Tview, Tview.TransitionName);
                 StartActivity(intent, options.ToBundle());
             };
 
+
+
+            view = FindViewById<TextView>(Resource.Id.PasswordForgotTXT);
+
+            view.Click += (s, e) =>
+            {
+                view.TransitionName = "imageview1";
+                Intent intent = new Intent(this, typeof(Activities.PasswordReset_Activity));
+                intent.PutExtra("ImageId", Resource.Drawable.BlurWay2.ToString());
+                ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this, view, view.TransitionName);
+                StartActivity(intent, options.ToBundle());
+            };
 
 
 

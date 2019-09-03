@@ -18,7 +18,7 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Activities\ItemCategories_Activity.cs" />
     <Compile Include="Activities\LogIn_Activity.cs" />
+    <Compile Include="Activities\PasswordReset_Activity.cs" />
     <Compile Include="Activities\Register_Activity.cs" />
     <Compile Include="Activities\StatisticCategory_Activity.cs" />
     <Compile Include="Activities\Tests_Activity.cs" />
@@ -206,6 +207,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Statistic_Category.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\PaswordReset.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

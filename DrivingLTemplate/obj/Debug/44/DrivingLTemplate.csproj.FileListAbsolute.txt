@@ -1,0 +1,8 @@
+C:\Users\TecService\source\repos\DrivingLTemplate\DrivingLTemplate\obj\Debug\44\MonoAndroid,Version=v4.4.AssemblyAttributes.cs
+C:\Users\TecService\source\repos\DrivingLTemplate\DrivingLTemplate\obj\Debug\44\build.props
+C:\Users\TecService\source\repos\DrivingLTemplate\DrivingLTemplate\obj\Debug\44\adb.props
+C:\Users\TecService\source\repos\DrivingLTemplate\DrivingLTemplate\obj\Debug\44\DrivingLTemplate.csprojAssemblyReference.cache
+C:\Users\TecService\source\repos\DrivingLTemplate\DrivingLTemplate\obj\Debug\44\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\TecService\source\repos\DrivingLTemplate\DrivingLTemplate\obj\Debug\44\resourcepaths.cache
+C:\Users\TecService\source\repos\DrivingLTemplate\DrivingLTemplate\obj\Debug\44\res.flag
+C:\Users\TecService\source\repos\DrivingLTemplate\DrivingLTemplate\obj\Debug\44\flata\compiled.flata

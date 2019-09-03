@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurway5"
+    >
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        
+        >
+
+
+          <android.support.v7.widget.CardView
+                 xmlns:app="http://schemas.android.com/apk/res-auto"
+         xmlns:tools="http://schemas.android.com/tools"
+                 android:layout_width="270dp"
+                 android:layout_height="50dp"
+                 android:layout_gravity="center"
+                 android:layout_marginBottom="80dp"
+                 app:cardCornerRadius="10dp"
+                 app:cardElevation="5dp"
+                 app:cardBackgroundColor="#5b5b5b"
+                 android:alpha="0.6"
+                 
+                     >
+      
+      
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center"
+                     android:hint="Email Address"
+                     android:textStyle="italic"
+                     android:gravity="center"
+                     android:id="@+id/RegEmail2ID"
+                     android:textColor="@android:color/black"
+                     android:alpha="0.8"
+                 
+                 
+             />
+      
+             </android.support.v7.widget.CardView>
+
+
+
+             <android.support.v7.widget.CardView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#3f0009"
+            android:alpha="0.7"
+            
+                >
+            <Button
+                android:text="შესვლა"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                android:id="@+id/RegisterBTN" />
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

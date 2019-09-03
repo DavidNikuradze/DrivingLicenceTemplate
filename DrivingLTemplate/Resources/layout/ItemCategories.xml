@@ -48,6 +48,8 @@
            
                    >
      
+    
+
      
            <ImageView
                android:layout_width="100dp"
@@ -60,17 +62,30 @@
                     
                
            />
-           <CheckBox
-               android:text="A, A1"
-               android:layout_width="70dp"
-               android:layout_height="30dp"
-               android:layout_gravity="center"
-               android:layout_marginTop="32dp"
-               android:id="@+id/A_CheckBOX" 
-           android:textColor="@android:color/darker_gray"
-               android:buttonTint="@android:color/white"
-           />
+        
+             <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+                    >
+
+
+                     <CheckBox
+                         android:text="A, A1"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:id="@+id/A_CheckBOX" 
+                        android:paddingBottom="8dp"
+                     android:paddingRight="80dp"
+                     android:gravity="center|bottom"
+                     
+                     android:textColor="@android:color/darker_gray"
+                         android:buttonTint="@android:color/white"
+                     />
      
+                      
+
+             </FrameLayout>
+                
      
        </android.support.v7.widget.CardView>
 
@@ -113,16 +128,26 @@
                android:scaleType="centerCrop"
                
            />
-           <CheckBox
-               android:text="B1, B, BE"
-               android:layout_width="100dp"
-               android:layout_height="30dp"
-               android:layout_gravity="center"
-               android:layout_marginTop="32dp"
-               android:id="@+id/B_CheckBOX" 
-           android:textColor="@android:color/darker_gray"
-               android:buttonTint="@android:color/white"
-           />
+
+                  <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+                    >
+
+                     <CheckBox
+                         android:text="B1,B,BE"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                          android:paddingBottom="8dp"
+
+                     android:gravity="center|bottom|left"
+                        
+                         android:id="@+id/B_CheckBOX" 
+                     android:textColor="@android:color/darker_gray"
+                         android:buttonTint="@android:color/white"
+                     />
+
+           </FrameLayout>
      
      
        </android.support.v7.widget.CardView>
@@ -180,16 +205,26 @@
                android:layout_gravity="center"
                
            />
-           <CheckBox
-               android:text="C"
-               android:layout_width="70dp"
-               android:layout_height="30dp"
-               android:layout_gravity="center"
-               android:layout_marginTop="32dp"
-               android:id="@+id/C_CheckBOX" 
-           android:textColor="@android:color/darker_gray"
-               android:buttonTint="@android:color/white"
-           />
+
+         
+             <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+                    
+                    >
+
+                <CheckBox
+                    android:text="C"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="8dp"
+                     android:gravity="center|bottom|left"
+                    android:id="@+id/C_CheckBOX" 
+                android:textColor="@android:color/darker_gray"
+                    android:buttonTint="@android:color/white"
+                />
+
+                </FrameLayout>
      
      
        </android.support.v7.widget.CardView>
@@ -234,12 +269,13 @@
                     android:alpha="0.99"
                
            />
+
            <CheckBox
                android:text="TRAM"
-               android:layout_width="100dp"
-               android:layout_height="30dp"
-               android:layout_gravity="center"
-               android:layout_marginTop="32dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:paddingBottom="8dp"
+               android:gravity="center|bottom|left"
                android:id="@+id/TRAM_CheckBOX" 
            android:textColor="@android:color/darker_gray"
                android:buttonTint="@android:color/white"
@@ -301,10 +337,10 @@
            />
            <CheckBox
                android:text="C1"
-               android:layout_width="70dp"
-               android:layout_height="30dp"
-               android:layout_gravity="center"
-               android:layout_marginTop="32dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:paddingBottom="8dp"
+               android:gravity="center|bottom|left"
                android:id="@+id/C_CheckBOX" 
            android:textColor="@android:color/darker_gray"
                android:buttonTint="@android:color/white"
@@ -356,10 +392,10 @@
            />
            <CheckBox
                android:text="D1"
-               android:layout_width="100dp"
-               android:layout_height="30dp"
-               android:layout_gravity="center"
-               android:layout_marginTop="32dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:paddingBottom="8dp"
+               android:gravity="center|bottom|left"
                android:id="@+id/TRAM_CheckBOX" 
            android:textColor="@android:color/darker_gray"
                android:buttonTint="@android:color/white"
@@ -420,10 +456,10 @@
            />
            <CheckBox
                android:text="D"
-               android:layout_width="70dp"
-               android:layout_height="30dp"
-               android:layout_gravity="center"
-               android:layout_marginTop="32dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:paddingBottom="8dp"
+               android:gravity="center|bottom|left"
                android:id="@+id/C_CheckBOX" 
            android:textColor="@android:color/darker_gray"
                android:buttonTint="@android:color/white"
@@ -451,7 +487,7 @@
        android:layout_width="350dp"
        android:layout_height="50dp"
        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
        
       
         >
@@ -464,12 +500,13 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
                android:layout_width="150dp"
-               android:layout_height="50dp"
+               android:layout_height="40dp"
              android:layout_marginLeft="10dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="5dp"
             app:cardBackgroundColor="#004703"
            android:alpha="0.7"
+           android:layout_marginBottom="40dp"
                 >
 
 
@@ -498,12 +535,13 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
                android:layout_width="150dp"
-               android:layout_height="50dp"
+               android:layout_height="40dp"
              android:layout_marginLeft="190dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="5dp"
             app:cardBackgroundColor="#515400"
            android:alpha="0.7"
+             android:layout_marginBottom="40dp"
                 >
 
 
