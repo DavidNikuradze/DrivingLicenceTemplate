@@ -9,7 +9,7 @@ using Android.Content;
 
 namespace DrivingLTemplate
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/Theme.AppCompat.Light.NoActionBar", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
+    [Activity(Label = "@string/app_name", Theme = "@style/Theme.AppCompat.Light.NoActionBar", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait, Icon = "@drawable/DLmain5")]
     
     public class MainActivity : AppCompatActivity
     {
@@ -44,7 +44,7 @@ namespace DrivingLTemplate
             ItemCategories.Click += (s, e) =>
             {
                 ItemCategories.TransitionName = "imageview1";
-                Intent intent = new Intent(this, typeof(Activities.ItemCategories_Activity));
+                Intent intent = new Intent(this, typeof(Activities.ItemCategory_Activity));
                 intent.PutExtra("ImageId", Resource.Drawable.BlurWay5.ToString());
                 ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this, ItemCategories, ItemCategories.TransitionName);
                 StartActivity(intent, options.ToBundle());

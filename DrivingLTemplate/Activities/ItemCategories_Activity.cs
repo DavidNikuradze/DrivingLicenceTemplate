@@ -18,30 +18,17 @@ namespace DrivingLTemplate.Activities
     class ItemCategories_Activity : AppCompatActivity
     {
 
-        TextView text;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
-            SetContentView(Resource.Layout.ItemCategories);
+            SetContentView(Resource.Layout.ItemCatRecyclerWiew);
 
 
-
-
-            text = FindViewById<TextView>(Resource.Id.TestStart2TXT);
-
-            text.Click += (s, e) =>
-            {
-                text.TransitionName = "imageview1";
-                Intent intent = new Intent(this, typeof(Activities.Tests_Activity));
-                intent.PutExtra("ImageId", Resource.Drawable.BlurWay5.ToString());
-                ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this, text, text.TransitionName);
-                StartActivity(intent, options.ToBundle());
-            };
-
-
-
+            var Result = Convert.ToInt32(Intent.Extras.GetString("DrivingLicence_ACategory"));
+            var img = FindViewById<ImageView>(Resource.Id.DrivingLicence_ACategory);
+            img.SetBackgroundResource(Result);
 
         }
     }

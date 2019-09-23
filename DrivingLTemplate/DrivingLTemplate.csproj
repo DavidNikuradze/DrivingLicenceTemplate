@@ -61,15 +61,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\ItemCategories_Activity.cs" />
+    <Compile Include="Activities\ItemCategory_Activity.cs" />
     <Compile Include="Activities\LogIn_Activity.cs" />
     <Compile Include="Activities\PasswordReset_Activity.cs" />
     <Compile Include="Activities\Register_Activity.cs" />
     <Compile Include="Activities\StatisticCategory_Activity.cs" />
+    <Compile Include="Activities\TestItems_Activity.cs" />
     <Compile Include="Activities\Tests_Activity.cs" />
     <Compile Include="Activities\TicketsCategory_Activity.cs" />
+    <Compile Include="Activities\TicketsItems_Activity.cs" />
+    <Compile Include="Adapter\ItemRecyclerAdapter.cs" />
+    <Compile Include="Adapter\TestItemsRecAdapter.cs" />
+    <Compile Include="Adapter\TicketsRecAdapter.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Models\ItemModel.cs" />
+    <Compile Include="Models\TestsItemsModel.cs" />
+    <Compile Include="Models\TicketsCatModel.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewHolder\ItemCategoryViewHolder.cs" />
+    <Compile Include="ViewHolder\TestItemsViewHolder.cs" />
+    <Compile Include="ViewHolder\TicketsCatViewHolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -155,21 +167,10 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\ItemCategories.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\Drawable\carIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\truckIcon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\trolleyTramIcon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\VanICon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\VanICon1.png" />
@@ -179,9 +180,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\trolleyTramIcon1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\miniBusVan.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\miniBusVan1.png" />
@@ -214,6 +212,44 @@
     <AndroidResource Include="Resources\layout\PaswordReset.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\ItemCategory.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\ItemCatRecyclerWiew.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\TestItemRecyclerView.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\testsimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\TicketsRecyclerView.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\mainPicApp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\DLmain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\DLmain2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\DLmain4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\DLmain5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
