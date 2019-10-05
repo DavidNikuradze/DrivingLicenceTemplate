@@ -25,7 +25,7 @@ namespace DrivingLTemplate
             SetContentView(Resource.Layout.activity_main);
 
 
-
+            
 
             textView = FindViewById<TextView>(Resource.Id.Log_InTxt);
 
